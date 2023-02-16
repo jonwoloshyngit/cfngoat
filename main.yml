@@ -15,8 +15,8 @@ jobs:
     
     - name: Run Bridgecrew
     id: Bridgecrew
-  uses: bridgecrewio/bridgecrew-action@master 
-  env:
-    PRISMA_API_URL: https://api3.prismacloud.io 
-  with:
-    api-key: ${{ secrets.BC_API_KEY }}
+    uses: bridgecrewio/bridgecrew-action@master 
+    env:
+      PRISMA_API_URL: https://api3.prismacloud.io 
+    with:
+      api-key: ${{ secrets.BC_API_KEY }}
